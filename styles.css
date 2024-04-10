@@ -1,0 +1,42 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    margin-bottom: 50px;
+}
+
+#morse-output, #english-output {
+    background-color: #ffffff;
+    border-color: black;
+    border: solid;
+    border-radius: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    
+    padding: 10px;
+    min-height: 15px;
+    max-width: 400px;
+}
+
+.eng-to-morse-container {
+    margin-bottom: 35px;
+}
+
+.eng-to-morse-input, .morse-to-eng-input {
+    display: flex;
+    align-items: baseline;
+    justify-content: space;
+}
+
+button.eng-to-btn, button.morse-eng-btn {
+    margin-left: 20px;
+}
+
+#morseField, #engField {
+    width: 300px;
+}
