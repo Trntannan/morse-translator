@@ -3,14 +3,14 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./styles.css">
+        <link rel="stylesheet" href="/app/styling/styles.css">
         <title>Document</title>
     </head>
     <body>
         <h1>Morse Code Translator</h1>
         <div class="eng-to-morse-container"> 
             <div class="eng-to-morse-input">
-                <textarea class="text-input" id="engField" rows="1" placeholder="Enter English Word Here!!"></textarea>
+                <input class="text-input" id="engField" placeholder="Enter English Word Here!!"></input>
                 <button class="eng-to-btn" onclick="translateToMorse">Translate</button>
                 
             </div>
@@ -20,13 +20,13 @@
         </div>
         <div class="morse-to-eng-container"> 
             <div class="morse-to-eng-input">
-                <textarea class="text-input" id="morseField" rows="1" placeholder="Morse code here!!"></textarea>
+                <input class="text-input" id="morseField" placeholder="Morse code here!!"></input>
                 <button class="morse-eng-btn" onclick="translateToMorse">Translate</button>   
             </div>
             <div class="eng-display">
                 <div id="english-output"></div>
             </div>
         </div>
-        <script src="script.js"></script>
+        <script src="/app/components/script.js"></script>
     </body>
 </html>
