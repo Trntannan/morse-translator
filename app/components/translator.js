@@ -12,11 +12,26 @@ const morseCodeDictionary = {
 };
 
 //2. function = translateToMorse()
-//2.1 engInput = get engField value
-//2.2 let morseOutput = ''  
-//2.3 for iterate over characters in engInput
-//2.4 if character is a property in morse dictionary
-//2.5 morseOutput += morseCodeDictionary[engInput[i]] + ' '
-//2.6 else morseOutput += '/ '
-//2.7 display morseOutput
+function translateToMorse() {
+    //2.1 engInput = get engField value
+    let engInput = document.getElementById('engField').value.toUpperCase(); //took me a while to figure out without .toUpperCase() it wouldnt work               
+    //2.2 let morseOutput = ''  
+    let morseOutput = '';
+    //2.3 for iterate over characters in engInput
+    for (let i = 0; i < engInput.length; i++) {
+        //2.4 if character is a property in morse dictionary
+        if (engInput[i] in morseCodeDictionary) {
+            //2.5 morseOutput += morseCodeDictionary[engInput[i]] + ' '
+            morseOutput += morseCodeDictionary[engInput[i]] + ' ';
+        } else {
+            //2.6 else morseOutput += '/ '
+            morseOutput += '/ ';
+        }
+    }
+    //2.7 display morseOutput
+    document.getElementById('morse-output').innerHTML = morseOutput;
+}
+
+//add eventlistener for .eng-to-btn onclick
+document.querySelector('.eng-to-btn').addEventListener('click', translateToMorse);
 
