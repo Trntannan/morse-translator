@@ -7,26 +7,36 @@
         <title>Document</title>
     </head>
     <body>
-        <h1>Morse Code Translator</h1>
-        <div class="eng-to-morse-container"> 
+        <div class="header">
+            <h1>Morse Code Translator</h1>
+        </div>
+        
+        <div class="container"> 
             <div class="eng-to-morse-input">
                 <input class="text-input" id="engField" placeholder="Enter English Word Here!!"></input>
-                <button class="eng-to-btn" onclick="translateToMorse">Translate</button>
-                
+                <button class="hide" id="refreshBtnMorse"><i class="fa fa-refresh"></i></button>
+                <button class="eng-to-btn">Translate</button> 
             </div>
             <div class="morse-display">
                 <div id="morse-output"></div>
+                <button class="hide" id="copyBtnMorse"><i class="fa-solid fa-copy"></i></button>
+                <div class="hide" id="checkMorse"><i class="fa-solid fa-check"></i></div>
             </div>
         </div>
-        <div class="morse-to-eng-container"> 
+        <div class="container"> 
             <div class="morse-to-eng-input">
                 <input class="text-input" id="morseField" placeholder="Morse code here!!"></input>
-                <button class="morse-to-btn" onclick="translateToMorse">Translate</button>   
+                <button class="hide" id="refreshBtnEng"><i class="fa fa-refresh"></i></button>
+                <button class="morse-to-btn">Translate</button>   
             </div>
             <div class="eng-display">
-                <div id="english-output"></div>
+                <div id="eng-output"></div>
+                <button class="hide" id="copyBtnEng"><i class="fa-solid fa-copy"></i></button>
+                <div class="hide" id="checkEng"><i class="fa-solid fa-check"></i></div>
             </div>
         </div>
-        <script content src="/app/components/translator.js"></script>
+        <script src="app/scripts/translate-to-morse.js"></script>
+        <script src="app/scripts/translate-to-english.js"></script>
+        <script src="https://kit.fontawesome.com/1598ea992f.js" crossorigin="anonymous"></script>
     </body>
 </html>

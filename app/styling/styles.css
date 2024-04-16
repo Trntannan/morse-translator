@@ -1,41 +1,149 @@
+/* General Styles */
 body {
+    background-color: #f2f2f2;
+    color: #333;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-image: url("../images/lyrics.png");
 }
 
 h1 {
-    margin-bottom: 50px;
+    margin-bottom: 3vw;
+    color: #0e7b69;
+    transition: margin-bottom 0.3s ease;
+    font-size: 4rem;
+
 }
 
-#morse-output, #english-output {
-    background-color: #ffffff;
-    border-color: black;
-    border: solid;
-    border-radius: 10px;
-    margin: 10px;
+.text-input {
+    background-color: #b0bec5;
+    color: #333;
+    border-radius: 1vw;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.container {
+    width: 80%;
+}
+
+.eng-to-btn,
+.morse-to-btn {
+    background-color: #455a64;
+    color: #fff;
+    border-radius: 1vw;
+    transition: margin-left 0.3s ease, border-width 0.3s ease;
+    margin-left: 1vw;
+}
+
+/* Input Containers */
+#morse-output,
+#eng-output {
+    margin: 2vw;
+    padding: 2vw;
+    background-color: #eceff1;
+    border-radius: 2vw;
+    box-shadow: 0 0 2vw rgba(0, 0, 0, 0.1);
+    transition: margin 0.3s ease, padding 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    position: relative; /* Added */
+}
+
+/* Input Fields */
+#morseField,
+#engField {
+    width: 20vw;
+    border-radius: 1vw;
+    transition: border-width 0.3s ease;
+    flex-grow: 1;
+}
+
+/* Input and Output Display */
+.eng-to-morse-input,
+.morse-to-eng-input,
+.morse-display,
+.eng-display {
+    margin-top: 2vw;
+    padding: 1vw;
+    background-color: #78909c;
+    border-radius: 1vw;
+    box-shadow: 0 0 1vw rgba(0, 0, 0, 0.1);
+    transition: margin-top 0.3s ease, padding 0.3s ease, box-shadow 0.3s ease;
+    position: relative; 
+}
+
+.hide {
+    display: none;
+}
+
+.eng-to-morse-input,
+.morse-to-eng-input {
     display: flex;
-    flex-direction: column;
-    padding: 10px;
-    min-height: 15px;
-    max-width: 400px;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.eng-to-morse-container {
-    margin-bottom: 35px;
+#refreshBtnMorse,
+#refreshBtnEng {
+    border: none;
+    background: none;
+    margin-left: 1vw;
+    color: #38454c;
 }
 
-.eng-to-morse-input, .morse-to-eng-input {
-    display: flex;
-    align-items: baseline;
-    justify-content: space;
+/* Morse and English Output */
+#morse-output,
+#eng-output {
+    font-size: 1.2em;
 }
 
-button.eng-to-btn, button.morse-eng-btn {
-    margin-left: 20px;
+#checkMorse,
+#checkEng {
+    position: absolute;
+    bottom: 5px; /* Adjust as needed */
+    right: 5px; /* Adjust as needed */
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2em;
+    color: green;
 }
 
-#morseField, #engField {
-    width: 300px;
+/* Copy */
+#copyBtnMorse,
+#copyBtnEng {
+     
+    position: absolute;
+    bottom: 5px; /* Adjust as needed */
+    right: 5px; /* Adjust as needed */
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2em;
+    color: #38454c;
+}
+
+/* Hover Effects */
+.eng-to-btn:hover,
+.morse-to-btn:hover {
+    background-color: #546e7a;
+
+}
+
+.text-input:hover {
+    border: 0.1vw solid #333;
+}
+
+.eng-to-btn,
+.morse-to-btn,
+.text-input {
+    cursor: pointer;
+    border: 0.1vw solid transparent;
+}
+
+/* Adjust the position of the Morse and English output */
+.morse-display,
+.eng-display {
+    position: relative;
+    overflow: hidden; 
 }

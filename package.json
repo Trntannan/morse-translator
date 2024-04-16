@@ -1,15 +1,27 @@
 {
   "name": "morse-code-translator",
   "version": "1.0.0",
-  "description": "",
+  "description": "A simple morse code translator",
   "main": "translator.js",
   "scripts": {
     "test": "jest"
   },
-  "author": "",
+  "author": "Trent Annan",
   "license": "ISC",
-  "dependencies": {
+  "devDependencies": {
+    "@babel/cli": "^7.24.1",
+    "@babel/core": "^7.24.4",
     "@babel/plugin-transform-modules-commonjs": "^7.24.1",
-    "jest": "^29.7.0"
+    "@babel/preset-env": "^7.24.4",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0"
+  },
+  "dependencies": {
+    "jsdom": "^24.0.0"
+  },
+  "jest": {
+    "setupFilesAfterEnv": [
+      "./jest.setup.js"
+    ]
   }
 }
