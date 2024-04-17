@@ -14,9 +14,10 @@ body {
 
 h1 {
     margin-bottom: 3vw;
-    color: #0e7b69;
+    color: #30435f;
     transition: margin-bottom 0.3s ease;
-    font-size: 4rem;
+    font-size: 5rem;
+    
 
 }
 
@@ -38,6 +39,8 @@ h1 {
     border-radius: 1vw;
     transition: margin-left 0.3s ease, border-width 0.3s ease;
     margin-left: 1vw;
+    height: 35px;
+    font-size: 25px;
 }
 
 /* Input Containers */
@@ -49,7 +52,8 @@ h1 {
     border-radius: 2vw;
     box-shadow: 0 0 2vw rgba(0, 0, 0, 0.1);
     transition: margin 0.3s ease, padding 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
-    position: relative; /* Added */
+    position: relative;
+    font-size: 30px;
 }
 
 /* Input Fields */
@@ -60,6 +64,7 @@ h1 {
     border-radius: 1vw;
     transition: border-width 0.3s ease;
     flex-grow: 1;
+    font-size: 20px;
 }
 
 .eng-to-morse-input,
@@ -98,7 +103,9 @@ h1 {
     background: none;
     margin-left: 1vw;
     color: #38454c;
+    height: 25px;
 }
+
 
 /* Morse and English Output */
 #morse-output,
@@ -109,8 +116,8 @@ h1 {
 #checkMorse,
 #checkEng {
     position: absolute;
-    bottom: 5px; /* Adjust as needed */
-    right: 5px; /* Adjust as needed */
+    bottom: 5px; 
+    right: 5px; 
     background: none;
     border: none;
     cursor: pointer;
@@ -123,8 +130,8 @@ h1 {
 #copyBtnEng {
      
     position: absolute;
-    bottom: 5px; /* Adjust as needed */
-    right: 5px; /* Adjust as needed */
+    bottom: 5px; 
+    right: 5px; 
     background: none;
     border: none;
     cursor: pointer;
