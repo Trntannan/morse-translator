@@ -7,6 +7,9 @@ body {
     justify-content: center;
     align-items: center;
     background-image: url("../images/lyrics.png");
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
 }
 
 h1 {
@@ -52,15 +55,28 @@ h1 {
 /* Input Fields */
 #morseField,
 #engField {
+    height: 30px;
     width: 20vw;
     border-radius: 1vw;
     transition: border-width 0.3s ease;
     flex-grow: 1;
 }
 
-/* Input and Output Display */
 .eng-to-morse-input,
-.morse-to-eng-input,
+.morse-to-eng-input {
+    margin-top: 2vw;
+    padding: 1vw;
+    background-color: #78909c;
+    border-radius: 1vw;
+    box-shadow: 0 0 1vw rgba(0, 0, 0, 0.1);
+    transition: margin-top 0.3s ease, padding 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* Input and Output Display */
 .morse-display,
 .eng-display {
     margin-top: 2vw;
@@ -74,13 +90,6 @@ h1 {
 
 .hide {
     display: none;
-}
-
-.eng-to-morse-input,
-.morse-to-eng-input {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 }
 
 #refreshBtnMorse,
@@ -141,9 +150,3 @@ h1 {
     border: 0.1vw solid transparent;
 }
 
-/* Adjust the position of the Morse and English output */
-.morse-display,
-.eng-display {
-    position: relative;
-    overflow: hidden; 
-}
