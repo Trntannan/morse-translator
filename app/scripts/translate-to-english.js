@@ -19,7 +19,7 @@ function translateToEng() {
             engOutput += ' ';
         }
     }
-    document.getElementById('eng-output').innerText = engOutput;
+    document.getElementById('eng-output').innerText = engOutput.toLowerCase();
 
     refreshe.classList.remove("hide");
     copye.classList.remove("hide");

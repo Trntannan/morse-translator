@@ -17,7 +17,7 @@ h1 {
     color: #30435f;
     transition: margin-bottom 0.3s ease;
     font-size: 5rem;
-    
+
 
 }
 
@@ -26,6 +26,11 @@ h1 {
     color: #333;
     border-radius: 1vw;
     transition: background-color 0.3s ease, color 0.3s ease;
+    height: 30px;
+    width: 20vw;
+    border-radius: 1vw;
+    transition: border-width 0.3s ease;
+    font-size: 20px;
 }
 
 .container {
@@ -38,7 +43,7 @@ h1 {
     color: #fff;
     border-radius: 1vw;
     transition: margin-left 0.3s ease, border-width 0.3s ease;
-    margin-left: 1vw;
+
     height: 35px;
     font-size: 25px;
 }
@@ -75,7 +80,7 @@ h1 {
     border-radius: 1vw;
     box-shadow: 0 0 1vw rgba(0, 0, 0, 0.1);
     transition: margin-top 0.3s ease, padding 0.3s ease, box-shadow 0.3s ease;
-    position: relative;
+  
     height: 40px;
     display: flex;
     align-items: center;
@@ -99,11 +104,13 @@ h1 {
 
 #refreshBtnMorse,
 #refreshBtnEng {
+    height: 50px;
+    width: 50px;
     border: none;
     background: none;
-    margin-left: 1vw;
+
     color: #38454c;
-    height: 25px;
+   
 }
 
 
@@ -127,11 +134,10 @@ h1 {
 
 /* Copy */
 #copyBtnMorse,
-#copyBtnEng {
-     
+#copyBtnEng { 
     position: absolute;
-    bottom: 5px; 
-    right: 5px; 
+    bottom: 4px; 
+    right: 3px; 
     background: none;
     border: none;
     cursor: pointer;
@@ -156,4 +162,6 @@ h1 {
     cursor: pointer;
     border: 0.1vw solid transparent;
 }
+
+
 
