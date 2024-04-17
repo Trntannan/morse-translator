@@ -30,8 +30,21 @@ document.querySelector('.eng-to-btn').addEventListener = jest.fn((event, callbac
   }
 });
 
+document.getElementById('refreshBtnMorse').addEventListener = jest.fn((event, callback) => {
+  if (event === 'click') {
+      callback(); 
+  }
+});
+
+document.getElementById('copyBtnMorse').addEventListener = jest.fn((event, callback) => {
+  if (event === 'click') {
+      callback(); 
+  }
+});
+
 describe("translateToMorse", () => {
   it("should translate A to morse code", () => {
+    document.querySelector('#engField').value = "A";
     translateToMorse();
 
     expect(document.getElementById('morse-output').innerText).toBe(".-");

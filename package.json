@@ -4,7 +4,7 @@
   "description": "A simple morse code translator",
   "main": "translator.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest --watchAll"
   },
   "author": "Trent Annan",
   "license": "ISC",
